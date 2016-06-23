@@ -18,7 +18,7 @@ def sms():
         price = result.json()['list']['resources'][0]['resource']['fields']['price']
         response.message("The current price of {1} is: {0}".format(price, body))
     except:
-        response.message("We could not find that price.")
+        response.message("Sorry, we could not find that price.")
 
     return str(response)
 
